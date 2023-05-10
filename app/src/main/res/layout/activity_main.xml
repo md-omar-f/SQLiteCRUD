@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+    <TextView
+        android:id="@+id/tv_employee_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="160dp"
+        android:text="Epmloyee No: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_employee_no"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:background="@color/purple_500"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:focusedByDefault="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tv_employee_no"
+        app:layout_constraintStart_toEndOf="@id/tv_employee_no"
+        app:layout_constraintTop_toTopOf="@id/tv_employee_no"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/tv_employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Epmloyee Name: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/tv_employee_no"
+        app:layout_constraintTop_toBottomOf="@id/tv_employee_no" />
+
+    <EditText
+        android:id="@+id/et_employee_name"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/tv_employee_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_employee_name"
+        app:layout_constraintTop_toTopOf="@id/tv_employee_name"
+        android:layout_marginStart="20dp"
+        android:background="@color/purple_500"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="104dp"
+        android:text="insert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_employee_name" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+
+        android:text="update"
+        app:layout_constraintStart_toEndOf="@id/btn_insert"
+        app:layout_constraintTop_toTopOf="@id/btn_insert"
+        app:layout_constraintBottom_toBottomOf="@id/btn_insert"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:text="delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_insert" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="search"
+        app:layout_constraintStart_toEndOf="@id/btn_delete"
+        app:layout_constraintTop_toTopOf="@id/btn_delete"
+        app:layout_constraintBottom_toBottomOf="@id/btn_delete"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
